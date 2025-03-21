@@ -189,7 +189,7 @@ export default function Footer() {
                         <Grid item size={{ xs: 1, md: 2 }} sx={{ mt: 1 }}>
                             <Typography
                                 variant="body2"
-                                sx={{ color: "text.secondary", mb: 1, mb: 1 }}
+                                sx={{ color: "text.secondary", mb: 1 }}
                             >
                                 Company
                             </Typography>

@@ -6,7 +6,7 @@ import hero from "../assets/hero.png";
 import { Box, Grid2, Stack, Typography } from "@mui/material";
 const Home = () => {
     return (
-        <>
+        <Box sx={{ padding: "20px" }}>
             <Grid2
                 container
                 spacing={3}
@@ -106,7 +106,7 @@ const Home = () => {
             <a href="/register" className="cta-button">
                 Get Started
             </a>
-        </>
+        </Box>
     );
 };
 
