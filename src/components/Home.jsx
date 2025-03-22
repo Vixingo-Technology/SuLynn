@@ -62,7 +62,7 @@ const Home = () => {
                 </Grid2>
             </Grid2>
 
-            <Box sx={{ my: 7, textAlign: "center" }}>
+            <Box sx={{ my: 10, textAlign: "center" }}>
                 <Typography
                     sx={{ fontWeight: "bold", opacity: "50%" }}
                     variant="h4"

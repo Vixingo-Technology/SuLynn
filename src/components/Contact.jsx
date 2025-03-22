@@ -1,73 +1,54 @@
-// File Path: C:\SuLynn\dashboard\public_site\src\components\Contact.js
-
-import React, { useState } from "react";
-import "../styles.css";
-import { Box, Button, TextField, Typography } from "@mui/material";
-
-const Contact = () => {
-    const [formData, setFormData] = useState({
-        name: "",
-        email: "",
-        message: "",
-    });
-    const [success, setSuccess] = useState(null);
-
-    const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-    };
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        setSuccess("Your message has been sent successfully!");
-        setFormData({ name: "", email: "", message: "" });
-    };
-
+import { Box, Grid2, IconButton, Typography } from "@mui/material";
+import React from "react";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import XIcon from "@mui/icons-material/X";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import ContactForm from "./forms/ContactForm";
+export default function Contact() {
     return (
         <>
-            <Box
-                sx={{
-                    display: "flex",
-                    flexDirection: "column",
-                    gap: 5,
-                    padding: "3rem 3rem ",
-                    border: "1px solid #ffffff30",
-                    borderRadius: "8px",
-                    backgroundColor: "#ffffff10",
-                    margin: "3rem",
-                }}
+            <Grid2
+                container
+                spacing={2}
+                columns={12}
+                sx={{ maxWidth: "1100px", marginX: "auto" }}
             >
-                {success && <p className="success-message">{success}</p>}
-                <Typography variant="h4">Get in Touch</Typography>
-                <form onSubmit={handleSubmit}>
-                    <TextField
-                        variant="standard"
-                        placeholder="Your Name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        required
-                    />
-                    <TextField
-                        variant="standard"
-                        placeholder="Your Email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        required
-                    />
-                    <TextField
-                        variant="standard"
-                        placeholder="Your Message"
-                        value={formData.message}
-                        onChange={handleChange}
-                        required
-                    />
-                    <br />
-                    <Button type="submit" variant="contained" color="primary">
-                        Send Message{" "}
-                    </Button>
-                </form>
-            </Box>
+                <Grid2 item size={{ xs: 12, md: 6 }}>
+                    <Box
+                        sx={{ my: 8, textAlign: { xs: "center", md: "left" } }}
+                    >
+                        <Typography variant="h4" sx={{ my: 2 }}>
+                            Contact Us
+                        </Typography>
+                        <Typography variant="body2">
+                            Phone: 123-456-7890
+                        </Typography>
+                        <Typography variant="body2">
+                            Email:{" "}
+                            <a href="mailto:triktrak@gmail.com">
+                                sulynn@gmail.com
+                            </a>
+                        </Typography>
+                    </Box>
+                    <Box sx={{ textAlign: { xs: "center", md: "left" } }}>
+                        <Typography variant="h4" sx={{ my: 2 }}>
+                            Social Media
+                        </Typography>
+                        <IconButton size="large">
+                            <FacebookIcon fontSize="32px" />
+                        </IconButton>
+                        <IconButton size="large">
+                            <XIcon fontSize="32px" />
+                        </IconButton>
+                        <IconButton size="large">
+                            <LinkedInIcon fontSize="32px" />
+                        </IconButton>
+                    </Box>
+                </Grid2>
+                <Grid2 item size={{ xs: 12, md: 6 }}>
+                    <ContactForm />
+                </Grid2>
+            </Grid2>
         </>
     );
-};
-
-export default Contact;
+}
