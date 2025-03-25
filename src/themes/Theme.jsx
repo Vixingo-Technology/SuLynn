@@ -13,21 +13,25 @@ export const ThemeProvider = ({ children }) => {
                 ...(mode === "dark"
                     ? {
                           primary: {
-                              main: "#9333EA",
+                              main: "#1976D2",
                           },
-                          background: { default: "#121212", paper: "#1e1e1e" },
+                          secondary: { main: "#F5F5F5" },
+                          background: { default: "#18235A", paper: "#0D458E" },
                           text: { primary: "#ffffff", secondary: "#b0b0b0" },
                       }
                     : {
-                          primary: { main: "#9333EA" },
-                          background: { default: "#ffffff", paper: "#f5f5f5" },
-                          text: { primary: "#000000", secondary: "#4f4f4f" },
+                          primary: {
+                              main: "#1976D2",
+                          },
+                          secondary: { main: "#F5F5F5" },
+                          background: { default: "#18235A", paper: "#0D458E" },
+                          text: { primary: "#ffffff", secondary: "#b0b0b0" },
                       }),
             },
             typography: {
-                fontFamily: "Inter, Roboto, Arial, sans-serif",
+                fontFamily: "Bai Jamjuree, Roboto, Arial, sans-serif",
                 h1: {
-                    fontSize: "3.5rem",
+                    // fontSize: "3.5rem",
                     // lineHeight: "120%",
                     fontWeight: "600",
                     "@media (max-width:1440px)": {
@@ -61,10 +65,10 @@ export const ThemeProvider = ({ children }) => {
                 MuiButton: {
                     styleOverrides: {
                         root: {
-                            borderRadius: "50px",
+                            borderRadius: "0px",
                             textTransform: "none",
                             "&:hover": {
-                                // backgroundColor: "#115293",
+                                // backgroundColor: "#1976D2",
                             },
                         },
                         contained: {
@@ -74,7 +78,9 @@ export const ThemeProvider = ({ children }) => {
                             },
                         },
                         outlined: {
-                            // border: "2px solid #1976d2",
+                            // color: "#F5F5F5",
+                            // border: "0.5px solid #F5F5F5",
+
                             "&:hover": {
                                 // border: "2px solid #115293",
                             },
@@ -98,7 +104,7 @@ export const ThemeProvider = ({ children }) => {
     );
 
     const ThemeContext = React.createContext();
-    const [themeMode, setThemeMode] = useState("light");
+    const [themeMode, setThemeMode] = useState("dark");
 
     const toggleTheme = () => {
         const newThemeMode = themeMode === "light" ? "dark" : "light";

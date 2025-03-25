@@ -3,64 +3,95 @@
 import React from "react";
 import "../styles.css";
 import hero from "../assets/hero.png";
-import { Box, Grid2, Stack, Typography } from "@mui/material";
+import { Box, Button, Grid2, Stack, Typography } from "@mui/material";
+import { ArrowRightAltSharp } from "@mui/icons-material";
 const Home = () => {
     return (
-        <Box sx={{ padding: "20px" }}>
-            <Grid2
-                container
-                spacing={3}
-                columns={{ xs: 1, md: 12 }}
-                sx={{
-                    background:
-                        "linear-gradient(-45deg,#9333ea44,#6366f1,#3b82f6,#9333ea40)",
-                    backgroundSize: "400% 400%",
-                    padding: "20px 10px",
-                    borderRadius: "10px",
-                }}
-            >
-                <Grid2 size={{ xs: 1, md: 4 }}>
-                    <Box sx={{ textAlign: "center" }}>
+        <>
+            <Box sx={{ padding: "20px", maxWidth: "1200px", margin: "auto" }}>
+                <Grid2
+                    container
+                    spacing={3}
+                    columns={{ xs: 1, md: 12 }}
+                    sx={{
+                        alignItems: "center",
+                        // background:
+                        //     "linear-gradient(-45deg,#9333ea44,#6366f1,#3b82f6,#9333ea40)",
+                        // backgroundSize: "400% 400%",
+                        // padding: "20px 10px",
+                        // borderRadius: "10px",
+                    }}
+                >
+                    <Grid2 item size={{ xs: 1, md: 7 }}>
                         {" "}
-                        <img src={hero} alt="" width={300} />
-                    </Box>
-                </Grid2>
-                <Grid2 item size={{ xs: 1, md: 8 }}>
-                    <Typography
-                        variant="h2"
-                        sx={{
-                            textAlign: "left",
-                            color: "white",
-                            fontWeight: "bold",
-                            lineHeight: "120%",
-                        }}
-                    >
-                        LLM's Hallucinations and Mistakes Are Driving You Crazy?
-                    </Typography>
-
-                    <Typography variant="h3" sx={{ color: "#ffffff80" }}>
-                        That's why we created
                         <Typography
-                            // variant="h2"
-
+                            variant="h4"
                             sx={{
-                                fontSize: "3.5rem",
+                                textAlign: "left",
+                                color: "white",
                                 fontWeight: "bold",
-                                background:
-                                    "linear-gradient(90deg,#9333ea,#6366f1,#3b82f650,#9333ea)",
-                                WebkitBackgroundClip: "text",
-                                WebkitTextFillColor: "transparent",
-                                lineHeight: 1.4,
+                                lineHeight: "120%",
+                            }}
+                        >
+                            Are LLMs' Hallucinations and Mistakes Driving You
+                            Crazy?
+                        </Typography>
+                        <Typography variant="h6" sx={{ color: "#ffffff80" }}>
+                            Introducing{" "}
+                        </Typography>{" "}
+                        <Typography
+                            variant="h2"
+                            // color="#ffffff"
+                            className="text_gradient_animate"
+                            sx={{
+                                fontSize: "4.2rem",
+                                fontWeight: "bold",
+                                display: "block",
+                                // opacity: "50%",
+                                // background:
+                                //     "linear-gradient(90deg,#9333ea,#6366f1,#3b82f650,#9333ea)",
+                                // WebkitBackgroundClip: "text",
+                                // WebkitTextFillColor: "transparent",
+                                // lineHeight: 1.4,
                             }}
                         >
                             SuLynn.
                         </Typography>{" "}
-                    </Typography>
-                    <Typography variant="h5" sx={{ color: "#ffffff" }}>
-                        The Intelligent Code Corrector for LLMs
-                    </Typography>
+                        <Typography variant="h5" sx={{ color: "#ffffff" }}>
+                            The Intelligent LLM corrector.
+                        </Typography>
+                        <Typography variant="body1" sx={{ color: "#ffffff80" }}>
+                            SuLynn harnesses the power of LLMs and brings them
+                            back on track, <br /> transforming their
+                            unpredictable nature into reliable, consistent, and
+                            secure code.
+                        </Typography>
+                        <Button
+                            variant="outlined"
+                            color="secondary"
+                            endIcon={<ArrowRightAltSharp />}
+                            sx={{
+                                borderRadius: "0px",
+                                my: 2,
+                                color: "white",
+                                borderColor: "white",
+                            }}
+                        >
+                            {" "}
+                            Learn More
+                        </Button>
+                    </Grid2>
+                    <Grid2 size={{ xs: 1, md: 5 }}>
+                        <Box sx={{ textAlign: "center" }}>
+                            {" "}
+                            <img src={hero} alt="" width={400} />
+                        </Box>
+                    </Grid2>
                 </Grid2>
-            </Grid2>
+            </Box>
+            <Box sx={{ my: 10, textAlign: "center", bgcolor: "black" }}>
+                <Typography>D</Typography>
+            </Box>
 
             <Box sx={{ my: 10, textAlign: "center" }}>
                 <Typography
@@ -106,7 +137,7 @@ const Home = () => {
             <a href="/register" className="cta-button">
                 Get Started
             </a>
-        </Box>
+        </>
     );
 };
 

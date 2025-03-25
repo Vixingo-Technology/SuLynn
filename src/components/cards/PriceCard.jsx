@@ -61,7 +61,7 @@ export default function PriceCard({
                 <Button
                     fullWidth
                     variant="contained"
-                    sx={{ borderRadius: "10px", my: 2 }}
+                    sx={{ borderRadius: "0px", my: 2 }}
                 >
                     {btnText}
                 </Button>

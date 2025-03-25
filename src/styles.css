@@ -1,5 +1,5 @@
 /* Global Reset */
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +8,7 @@
 
 /* Body & General Styles */
 body {
-    font-family: "Inter", sans-serif;
+    font-family: "Bai Jamjuree", sans-serif;
     line-height: 1.6;
     /* background: linear-gradient(135deg, #f4f4f4, #e2e8f0); */
     /* color: #333; */
@@ -109,7 +109,10 @@ h1 {
     text-decoration: none;
     font-weight: bold;
 } */
-
+a {
+    text-decoration: none;
+    color: inherit;
+}
 a:hover {
     text-decoration: underline;
 }
@@ -241,8 +244,8 @@ footer a:hover {
     );
     background-size: 300% 200%;
     background-position: 0;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+    /* padding-top: 0.25em;
+    padding-bottom: 0.25em; */
     margin-top: -0.5em;
     margin-bottom: -0.5em;
     display: inline-block;
