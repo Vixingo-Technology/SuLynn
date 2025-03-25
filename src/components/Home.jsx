@@ -213,7 +213,7 @@ const Home = () => {
                     Get Started with SuLynn for Free
                 </Button>
             </Box>
-            <Box sx={{ py: 12, margin: 2 }}>
+            <Box sx={{ py: 10, margin: 2 }}>
                 {/* <Typography
                     variant="h4"
                     sx={{ textAlign: "center", fontWeight: "bold" }}
@@ -320,54 +320,53 @@ const Home = () => {
                         </Box>
                     </Grid2>
                 </Grid2>
+                <PrimeTitle
+                    title="Built for High-Stakes Industries"
+                    subTitle={
+                        "Built for Any Industry — But Especially Where Precision Matters Most"
+                    }
+                    lildes={
+                        "SuLynn is designed to work in any field, but it truly shines in industries where mistakes are costly — financially, ethically, or for human lives."
+                    }
+                />
+                <Grid2
+                    sx={{ mt: 4, maxWidth: "1200px", mx: "auto" }}
+                    container
+                    spacing={4}
+                    justifyContent="center"
+                    alignItems="center"
+                    columns={{ xs: 1, sm: 6, md: 12 }}
+                >
+                    <Grid2 item size={{ xs: 1, sm: 4, md: 4 }}>
+                        <NewCard
+                            imgsrc={f1}
+                            title={"🏥 Healthcare "}
+                            description={
+                                "  Helping AI generate safe and compliant code for medical research, patient data analysis, and health tech solutions."
+                            }
+                        />
+                    </Grid2>
+                    <Grid2 item size={{ xs: 1, sm: 4, md: 4 }}>
+                        <NewCard
+                            imgsrc={f2}
+                            title={"💰 Finance "}
+                            description={
+                                " Preventing AI mistakes in fraud detection, algorithmic trading, and financial compliance tools."
+                            }
+                        />
+                    </Grid2>
+                    <Grid2 item size={{ xs: 1, sm: 4, md: 4 }}>
+                        <NewCard
+                            imgsrc={f3}
+                            title={"🌿 Natural Foods & Nutrition "}
+                            description={
+                                " Empowering smarter AI solutions for food production, supply chain, and nutrition science. "
+                            }
+                        />
+                    </Grid2>
+                </Grid2>
             </Box>
 
-            <PrimeTitle
-                title="Built for High-Stakes Industries"
-                subTitle={
-                    "Built for Any Industry — But Especially Where Precision Matters Most"
-                }
-                lildes={
-                    "SuLynn is designed to work in any field, but it truly shines in industries where mistakes are costly — financially, ethically, or for human lives."
-                }
-            />
-
-            <Grid2
-                sx={{ mt: 4, maxWidth: "1200px", mx: "auto" }}
-                container
-                spacing={4}
-                justifyContent="center"
-                alignItems="center"
-                columns={{ xs: 1, sm: 6, md: 12 }}
-            >
-                <Grid2 item size={{ xs: 1, sm: 4, md: 4 }}>
-                    <NewCard
-                        imgsrc={f1}
-                        title={"🏥 Healthcare "}
-                        description={
-                            "  Helping AI generate safe and compliant code for medical research, patient data analysis, and health tech solutions."
-                        }
-                    />
-                </Grid2>
-                <Grid2 item size={{ xs: 1, sm: 4, md: 4 }}>
-                    <NewCard
-                        imgsrc={f2}
-                        title={"💰 Finance "}
-                        description={
-                            " Preventing AI mistakes in fraud detection, algorithmic trading, and financial compliance tools."
-                        }
-                    />
-                </Grid2>
-                <Grid2 item size={{ xs: 1, sm: 4, md: 4 }}>
-                    <NewCard
-                        imgsrc={f3}
-                        title={"🌿 Natural Foods & Nutrition "}
-                        description={
-                            " Empowering smarter AI solutions for food production, supply chain, and nutrition science. "
-                        }
-                    />
-                </Grid2>
-            </Grid2>
             <Box sx={{ my: 10 }}>
                 <Grid2 container columns={{ xs: 1, md: 12 }}>
                     <Grid2
