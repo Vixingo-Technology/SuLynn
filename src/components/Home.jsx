@@ -204,7 +204,7 @@ const Home = () => {
                     Get Started with SuLynn for Free
                 </Button>
             </Box>
-            <Box sx={{ py: 10, margin: 2 }}>
+            <Box sx={{ py: 12, margin: 2 }}>
                 {/* <Typography
                     variant="h4"
                     sx={{ textAlign: "center", fontWeight: "bold" }}
@@ -231,7 +231,13 @@ const Home = () => {
                             minHeight: "200px",
                         }}
                     >
-                        <Box sx={{ display: "flex", flexDirection: "row" }}>
+                        <Box
+                            sx={{
+                                display: "flex",
+                                flexDirection: "row",
+                                alignItems: "center",
+                            }}
+                        >
                             {" "}
                             <img src={start} alt="" />
                             <Typography
@@ -286,12 +292,13 @@ const Home = () => {
                     <Grid2 item size={{ xs: 1, md: 3 }}>
                         <Box
                             sx={{
+                                minHeight: "200px",
                                 display: "flex",
                                 flexDirection: "row",
                                 textAlign: "center",
+                                alignItems: "center",
                             }}
                         >
-                            {" "}
                             <Typography variant="h5">
                                 Powered by MorphicBrain's advanced AI.
                             </Typography>
