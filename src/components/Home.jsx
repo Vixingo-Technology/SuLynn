@@ -34,12 +34,9 @@ const Home = () => {
                     <Grid2 item size={{ xs: 1, md: 7 }}>
                         {" "}
                         <Typography
-                            variant="h4"
+                            variant="h5"
                             sx={{
                                 textAlign: "left",
-                                color: "white",
-                                fontWeight: "bold",
-                                lineHeight: "120%",
                             }}
                         >
                             Are LLMs' Hallucinations and Mistakes Driving You
@@ -66,7 +63,15 @@ const Home = () => {
                         >
                             SuLynn.
                         </Typography>{" "}
-                        <Typography variant="h5" sx={{ color: "#ffffff" }}>
+                        <Typography
+                            variant="h4"
+                            sx={{
+                                color: "#ffffff",
+
+                                fontWeight: "bold",
+                                lineHeight: "120%",
+                            }}
+                        >
                             The Intelligent LLM corrector.
                         </Typography>
                         <Typography variant="body1" sx={{ color: "#ffffff80" }}>
