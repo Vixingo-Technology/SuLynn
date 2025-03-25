@@ -9,6 +9,14 @@ import logo1 from "../assets/tt.png";
 import logo2 from "../assets/mb.png";
 import start from "../assets/start.png";
 import WorkCard from "./cards/WorkCard";
+import PrimeTitle from "./Headings/PrimeTitle";
+import NewCard from "./cards/NewCard";
+import f1 from "../assets/f1.png";
+import f2 from "../assets/f2.gif";
+import f3 from "../assets/f3.png";
+import IconCard from "./cards/IconCard";
+import map from "../assets/map.png";
+import { NavLink } from "react-router-dom";
 const Home = () => {
     return (
         <>
@@ -46,7 +54,7 @@ const Home = () => {
                         </Typography>
                         <Typography variant="h6" sx={{ color: "#ffffff80" }}>
                             Introducing{" "}
-                        </Typography>{" "}
+                        </Typography>
                         <Typography
                             variant="h2"
                             // color="#ffffff"
@@ -85,6 +93,7 @@ const Home = () => {
                         <Button
                             variant="outlined"
                             color="secondary"
+                            size="large"
                             endIcon={<ArrowRightAltSharp />}
                             sx={{
                                 borderRadius: "0px",
@@ -312,7 +321,163 @@ const Home = () => {
                     </Grid2>
                 </Grid2>
             </Box>
-            <p>
+
+            <PrimeTitle
+                title="Built for High-Stakes Industries"
+                subTitle={
+                    "Built for Any Industry — But Especially Where Precision Matters Most"
+                }
+                lildes={
+                    "SuLynn is designed to work in any field, but it truly shines in industries where mistakes are costly — financially, ethically, or for human lives."
+                }
+            />
+
+            <Grid2
+                sx={{ mt: 4, maxWidth: "1200px", mx: "auto" }}
+                container
+                spacing={4}
+                justifyContent="center"
+                alignItems="center"
+                columns={{ xs: 1, sm: 6, md: 12 }}
+            >
+                <Grid2 item size={{ xs: 1, sm: 4, md: 4 }}>
+                    <NewCard
+                        imgsrc={f1}
+                        title={"🏥 Healthcare "}
+                        description={
+                            "  Helping AI generate safe and compliant code for medical research, patient data analysis, and health tech solutions."
+                        }
+                    />
+                </Grid2>
+                <Grid2 item size={{ xs: 1, sm: 4, md: 4 }}>
+                    <NewCard
+                        imgsrc={f2}
+                        title={"💰 Finance "}
+                        description={
+                            " Preventing AI mistakes in fraud detection, algorithmic trading, and financial compliance tools."
+                        }
+                    />
+                </Grid2>
+                <Grid2 item size={{ xs: 1, sm: 4, md: 4 }}>
+                    <NewCard
+                        imgsrc={f3}
+                        title={"🌿 Natural Foods & Nutrition "}
+                        description={
+                            " Empowering smarter AI solutions for food production, supply chain, and nutrition science. "
+                        }
+                    />
+                </Grid2>
+            </Grid2>
+            <Box sx={{ my: 10 }}>
+                <Grid2 container columns={{ xs: 1, md: 12 }}>
+                    <Grid2
+                        item
+                        size={{ xs: 1, md: 6 }}
+                        sx={{
+                            background: "#f9f9f9",
+                        }}
+                    >
+                        <Box sx={{ textAlign: "center" }}>
+                            <img src={map} alt="" width={"100%"} />
+                        </Box>
+                    </Grid2>
+                    <Grid2
+                        item
+                        size={{ xs: 1, md: 6 }}
+                        sx={{ bgcolor: "primary.main", opacity: "80%" }}
+                    >
+                        <Box sx={{ my: 5, px: 5 }}>
+                            <Typography
+                                variant="h5"
+                                sx={{
+                                    // textAlign: "center",
+                                    fontWeight: "bold",
+
+                                    my: 5,
+                                }}
+                            >
+                                SuLynn + MorphicBrain: <br /> The Ultimate AI
+                                Coding Powerhouse
+                            </Typography>
+                            <Typography
+                                variant="body1"
+                                sx={{
+                                    my: 5,
+                                    maxWidth: "500px",
+                                    marginRight: "auto",
+                                }}
+                            >
+                                Explore the Synergy: How MorphicBrain multiplies
+                                and enhances SuLynn's capabilities.
+                            </Typography>
+                            <NavLink to={"/synergy"}>
+                                <Button
+                                    variant="contained"
+                                    color="secondary"
+                                    size="large"
+                                    sx={{ borderRadius: "0px", my: 2 }}
+                                >
+                                    Explore the Synergy
+                                </Button>
+                            </NavLink>
+                        </Box>
+                    </Grid2>
+                </Grid2>
+            </Box>
+            <Box sx={{ textAlign: "center", my: 10 }}>
+                <PrimeTitle
+                    title={
+                        "Unleashing the Full Potential of SuLynn with MorphicBrain "
+                    }
+                    subTitle={
+                        "How SuLynn Keeps AI in Check — in 3 Simple Steps"
+                    }
+                />
+                <Grid2
+                    container
+                    spacing={2}
+                    sx={{ my: 8, maxWidth: "1140px", mx: "auto" }}
+                    columns={{ xs: 1, sm: 8, md: 12 }}
+                >
+                    <Grid2 item size={{ xs: 2, sm: 4, md: 4 }}>
+                        <IconCard
+                            title={"Monitor"}
+                            description={
+                                "SuLynn checks every line of code your AI writes — every 3 seconds."
+                            }
+                        />
+                    </Grid2>
+                    <Grid2 item size={{ xs: 2, sm: 4, md: 4 }}>
+                        <IconCard
+                            title={"Validate"}
+                            description={
+                                "It alerts you when code is wrong, missing, or altered."
+                            }
+                        />
+                    </Grid2>
+                    <Grid2 item size={{ xs: 2, sm: 4, md: 4 }}>
+                        <IconCard
+                            title={"Assemble & Protect"}
+                            description={
+                                "SuLynn assembles complete, ready-to-run scripts, and stores safe checkpoints."
+                            }
+                        />
+                    </Grid2>
+                </Grid2>
+                <Typography variant="h3" sx={{ fontWeight: "bold" }}>
+                      Ready to Get Started with SuLynn? {" "}
+                </Typography>
+                <Button
+                    variant="contained"
+                    color="secondary"
+                    size="large"
+                    sx={{ borderRadius: "0px", my: 4 }}
+                >
+                    Get Started with SuLynn for Free
+                </Button>
+            </Box>
+            {/* ses */}
+            {/* <p>
                 The AI-powered solution to keep Large Language Models (LLMs) on
                 track.
             </p>
@@ -335,7 +500,7 @@ const Home = () => {
             </div>
             <a href="/register" className="cta-button">
                 Get Started
-            </a>
+            </a> */}
         </>
     );
 };
