@@ -260,3 +260,13 @@ footer a:hover {
         background-position: 100%;
     }
 }
+
+/* hover effect */
+.hover_effect {
+    filter: grayscale(100%);
+    transition: 0.5s;
+}
+
+.hover_effect:hover {
+    filter: grayscale(0%);
+}

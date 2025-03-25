@@ -5,10 +5,19 @@ import "../styles.css";
 import hero from "../assets/hero.png";
 import { Box, Button, Grid2, Stack, Typography } from "@mui/material";
 import { ArrowRightAltSharp } from "@mui/icons-material";
+import logo1 from "../assets/tt.png";
+import logo2 from "../assets/mb.png";
 const Home = () => {
     return (
         <>
-            <Box sx={{ padding: "20px", maxWidth: "1200px", margin: "auto" }}>
+            <Box
+                sx={{
+                    padding: "20px",
+                    pt: "50px",
+                    maxWidth: "1200px",
+                    margin: "auto",
+                }}
+            >
                 <Grid2
                     container
                     spacing={3}
@@ -89,8 +98,20 @@ const Home = () => {
                     </Grid2>
                 </Grid2>
             </Box>
-            <Box sx={{ my: 10, textAlign: "center", bgcolor: "black" }}>
-                <Typography>D</Typography>
+            <Box
+                sx={{
+                    my: 10,
+                    textAlign: "center",
+                    bgcolor: "black",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: "40px",
+                    py: 5,
+                }}
+            >
+                <img src={logo1} alt="" className="hover_effect" height={60} />
+                <img src={logo2} alt="" className="hover_effect" height={40} />
             </Box>
 
             <Box sx={{ my: 10, textAlign: "center" }}>
