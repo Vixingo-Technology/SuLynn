@@ -93,14 +93,14 @@ const Home = () => {
                     <Grid2 size={{ xs: 1, md: 5 }}>
                         <Box sx={{ textAlign: "center" }}>
                             {" "}
-                            <img src={hero} alt="" width={400} />
+                            <img src={hero} alt="" width={"100%"} />
                         </Box>
                     </Grid2>
                 </Grid2>
             </Box>
             <Box
                 sx={{
-                    my: 10,
+                    my: 5,
                     textAlign: "center",
                     bgcolor: "black",
                     display: "flex",
@@ -108,8 +108,13 @@ const Home = () => {
                     justifyContent: "center",
                     gap: "40px",
                     py: 5,
+                    flexWrap: "wrap",
                 }}
             >
+                <img src={logo1} alt="" className="hover_effect" height={60} />
+                <img src={logo2} alt="" className="hover_effect" height={40} />
+                <img src={logo1} alt="" className="hover_effect" height={60} />
+                <img src={logo2} alt="" className="hover_effect" height={40} />
                 <img src={logo1} alt="" className="hover_effect" height={60} />
                 <img src={logo2} alt="" className="hover_effect" height={40} />
             </Box>
