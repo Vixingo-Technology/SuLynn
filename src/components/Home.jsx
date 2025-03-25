@@ -223,19 +223,20 @@ const Home = () => {
                     <Grid2
                         item
                         size={{ xs: 1, md: 3 }}
-                        sx={{
-                            // textAlign: "center",
-
-                            // justifyContent: "center",
-                            // alignItems: "center",
-                            minHeight: "200px",
-                        }}
+                        sx={
+                            {
+                                // textAlign: "center",
+                                // justifyContent: "center",
+                                // alignItems: "center",
+                            }
+                        }
                     >
                         <Box
                             sx={{
                                 display: "flex",
                                 flexDirection: "row",
                                 alignItems: "center",
+                                minHeight: "200px",
                             }}
                         >
                             {" "}

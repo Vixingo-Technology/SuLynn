@@ -10,16 +10,17 @@ export default function WorkCard({ title, des }) {
                     display: "flex",
                     flexDirection: "column",
                     // justifyContent: "center",
-                    // border: "1px solid #e0e0e0",
+                    border: "0.5px solid #F7FAFC",
+                    padding: "20px",
                 }}
             >
-                <Typography variant="h2" color="primary">
+                <Typography variant="h4" color="primary">
                     {title}
                 </Typography>
                 <Typography
                     sx={{
                         color: "text.secondary",
-                        mt: 1.5,
+                        mt: 2,
                     }}
                     variant="h6"
                 >
