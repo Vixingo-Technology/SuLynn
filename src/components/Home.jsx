@@ -3,7 +3,7 @@
 import React from "react";
 import "../styles.css";
 import hero from "../assets/hero.png";
-import { Box, Button, Grid2, Stack, Typography } from "@mui/material";
+import { Box, Button, Grid2, Paper, Stack, Typography } from "@mui/material";
 import { ArrowRightAltSharp } from "@mui/icons-material";
 import logo1 from "../assets/tt.png";
 import logo2 from "../assets/mb.png";
@@ -14,7 +14,7 @@ const Home = () => {
                 sx={{
                     padding: "20px",
                     pt: "50px",
-                    maxWidth: "1200px",
+                    maxWidth: "1140px",
                     margin: "auto",
                 }}
             >
@@ -129,21 +129,80 @@ const Home = () => {
                     sx={{ fontWeight: "bold", opacity: "50%" }}
                     variant="h4"
                 >
-                    It's a revolution.
+                    Stop Fighting Your AI.
                 </Typography>
                 <Typography
                     variant="h4"
                     sx={{ fontWeight: "bold", py: 0 }}
                     className="text_gradient_animate"
                 >
-                    Transforming LLMs into <br /> Reliable, Consistent, and
-                    Secure code.
+                    SuLynn Brings Order to LLM Chaos.
                 </Typography>
                 <Typography
                     variant="h4"
                     sx={{ textAlign: "center" }}
                 ></Typography>
             </Box>
+
+            <Stack
+                direction="row"
+                sx={{
+                    display: "flex",
+                    justifyContent: "center",
+                    gap: 2,
+                    flexWrap: "wrap",
+                    padding: "20px",
+                    textAlign: "center",
+                    alignItems: "center",
+                }}
+            >
+                <Paper>
+                    <Typography variant="h6">
+                        Tired of debugging AI hallucinations and errors?
+                    </Typography>
+                </Paper>
+                <Paper>
+                    <Typography variant="h6">
+                        Frustrated with LLM code fragments that don't fit
+                        together?
+                    </Typography>
+                </Paper>
+                <Paper>
+                    <Typography variant="h6">
+                        Spending more time fixing AI code than writing your own?
+                    </Typography>
+                </Paper>
+            </Stack>
+            <Typography
+                variant="h4"
+                sx={{ fontWeight: "bold", textAlign: "center", my: 5 }}
+            >
+                SuLynn is your intelligent code corrector, bringing reliability{" "}
+                <br />
+                and control to LLM-powered development.
+            </Typography>
+
+            <Box
+                sx={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    gap: 2,
+                    flexWrap: "wrap",
+                    padding: "20px",
+                    textAlign: "center",
+                }}
+            >
+                <Button
+                    variant="contained"
+                    color="secondary"
+                    size="large"
+                    sx={{ borderRadius: "0px", my: 2, mb: 5 }}
+                >
+                    Get Started with SuLynn for Free
+                </Button>
+            </Box>
+
             <p>
                 The AI-powered solution to keep Large Language Models (LLMs) on
                 track.

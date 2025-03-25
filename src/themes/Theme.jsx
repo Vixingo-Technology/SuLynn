@@ -73,7 +73,9 @@ export const ThemeProvider = ({ children }) => {
                         },
                         contained: {
                             // boxShadow: "none",
+                            transition: "all 0.5s",
                             "&:hover": {
+                                color: "#fff",
                                 // boxShadow: "none",
                             },
                         },
