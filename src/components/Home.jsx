@@ -7,6 +7,8 @@ import { Box, Button, Grid2, Paper, Stack, Typography } from "@mui/material";
 import { ArrowRightAltSharp } from "@mui/icons-material";
 import logo1 from "../assets/tt.png";
 import logo2 from "../assets/mb.png";
+import start from "../assets/start.png";
+import WorkCard from "./cards/WorkCard";
 const Home = () => {
     return (
         <>
@@ -202,7 +204,106 @@ const Home = () => {
                     Get Started with SuLynn for Free
                 </Button>
             </Box>
+            <Box sx={{ py: 10, margin: 2 }}>
+                {/* <Typography
+                    variant="h4"
+                    sx={{ textAlign: "center", fontWeight: "bold" }}
+                >
+                    How SuLynn Works
+                </Typography> */}
+                <Grid2
+                    container
+                    spacing={3}
+                    columns={{ xs: 1, md: 12 }}
+                    sx={{
+                        alignItems: "center",
+                        gap: 2,
+                    }}
+                >
+                    <Grid2
+                        item
+                        size={{ xs: 1, md: 3 }}
+                        sx={{
+                            // textAlign: "center",
 
+                            // justifyContent: "center",
+                            // alignItems: "center",
+                            minHeight: "200px",
+                        }}
+                    >
+                        <Box sx={{ display: "flex", flexDirection: "row" }}>
+                            {" "}
+                            <img src={start} alt="" />
+                            <Typography
+                                variant="h5"
+                                sx={{ textAlign: "center", mr: 2 }}
+                            >
+                                Built for AI Coders Who Demand Results — Not
+                                Frustration
+                            </Typography>
+                        </Box>
+                    </Grid2>
+                    <Grid2 item size={{ xs: 1, md: 3 }}>
+                        <WorkCard
+                            title={"01."}
+                            des={" Real-time AI output monitoring."}
+                        />
+                    </Grid2>
+                    <Grid2 item size={{ xs: 1, md: 3 }}>
+                        <WorkCard
+                            title={"02."}
+                            des={" Automatic code assembly from fragments."}
+                        />
+                    </Grid2>
+                    <Grid2 item size={{ xs: 1, md: 3 }}>
+                        <WorkCard
+                            title={"03."}
+                            des={" Alerts on AI hallucination or deviation."}
+                        />
+                    </Grid2>
+                    <Grid2 item size={{ xs: 1, md: 3 }}>
+                        <WorkCard
+                            title={"04."}
+                            des={" Safe checkpointing and comparison."}
+                        />
+                    </Grid2>
+                    <Grid2 item size={{ xs: 1, md: 3 }}>
+                        <WorkCard
+                            title={"05."}
+                            des={
+                                " Built-in for Healthcare, Finance, and Natural Foods industries."
+                            }
+                        />
+                    </Grid2>
+                    <Grid2 item size={{ xs: 1, md: 3 }}>
+                        <WorkCard
+                            title={"06."}
+                            des={
+                                " Fast performance — checks AI output in under 1/10th of a second."
+                            }
+                        />
+                    </Grid2>
+                    <Grid2 item size={{ xs: 1, md: 3 }}>
+                        <Box
+                            sx={{
+                                display: "flex",
+                                flexDirection: "row",
+                                textAlign: "center",
+                            }}
+                        >
+                            {" "}
+                            <Typography variant="h5">
+                                Powered by MorphicBrain's advanced AI.
+                            </Typography>
+                            <img
+                                src={start}
+                                alt=""
+                                style={{ rotate: "180deg" }}
+                            />
+                        </Box>
+                    </Grid2>
+                </Grid2>
+            </Box>
             <p>
                 The AI-powered solution to keep Large Language Models (LLMs) on
                 track.
