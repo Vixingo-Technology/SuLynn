@@ -122,7 +122,7 @@ export default function Footer() {
                                     to="/"
                                     style={{ textDecoration: "none" }}
                                 >
-                                    Twitter
+                                    X
                                 </NavLink>{" "}
                                 <NavLink
                                     to="/"
@@ -130,18 +130,18 @@ export default function Footer() {
                                 >
                                     LinkedIn
                                 </NavLink>
-                                <NavLink
+                                {/* <NavLink
                                     to="/"
                                     style={{ textDecoration: "none" }}
                                 >
                                     Discord
-                                </NavLink>
-                                <NavLink
+                                </NavLink> */}
+                                {/* <NavLink
                                     to="/"
                                     style={{ textDecoration: "none" }}
                                 >
                                     <Typography>Facebook</Typography>
-                                </NavLink>
+                                </NavLink> */}
                             </Stack>
                         </Grid>
                         <Grid item size={{ xs: 1, md: 2 }} sx={{ mt: 1 }}>
