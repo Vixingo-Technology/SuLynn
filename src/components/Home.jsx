@@ -396,7 +396,7 @@ const Home = () => {
                                 }}
                             >
                                 SuLynn + MorphicBrain: <br /> The Ultimate LLM
-                                Powerhouse
+                                Corrector Powerhouse
                             </Typography>
                             <Typography
                                 variant="body1"
