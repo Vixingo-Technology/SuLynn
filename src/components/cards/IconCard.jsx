@@ -15,10 +15,11 @@ const bull = (
     </Box>
 );
 
-export default function IconCard({ title, description }) {
+export default function IconCard({ icon, title, description }) {
     const card = (
         <React.Fragment>
             <CardContent>
+                {icon}
                 <Typography variant="h5" component="div">
                     {title}
                 </Typography>

@@ -8,6 +8,10 @@ import PrimeTitle from "./Headings/PrimeTitle";
 import Contact from "./Contact";
 import mb from "../assets/mb.png";
 import art from "../assets/art.png";
+import GrainIcon from "@mui/icons-material/Grain";
+import DomainAddIcon from "@mui/icons-material/DomainAdd";
+import TerminalIcon from "@mui/icons-material/Terminal";
+import BiotechIcon from "@mui/icons-material/Biotech";
 const About = () => {
     return (
         <>
@@ -213,6 +217,13 @@ const About = () => {
                     >
                         <Grid2 item size={{ xs: 2, sm: 4, md: 6 }}>
                             <IconCard
+                                icon={
+                                    <GrainIcon
+                                        sx={{
+                                            fontSize: "60px",
+                                        }}
+                                    />
+                                }
                                 title={
                                     " AI Developers working on complex AI-assisted coding projects."
                                 }
@@ -223,6 +234,13 @@ const About = () => {
                         </Grid2>
                         <Grid2 item size={{ xs: 2, sm: 4, md: 6 }}>
                             <IconCard
+                                icon={
+                                    <TerminalIcon
+                                        sx={{
+                                            fontSize: "60px",
+                                        }}
+                                    />
+                                }
                                 title={
                                     "Software Engineers using LLMs to speed up coding but frustrated with broken suggestions."
                                 }
@@ -233,6 +251,13 @@ const About = () => {
                         </Grid2>
                         <Grid2 item size={{ xs: 2, sm: 4, md: 6 }}>
                             <IconCard
+                                icon={
+                                    <DomainAddIcon
+                                        sx={{
+                                            fontSize: "60px",
+                                        }}
+                                    />
+                                }
                                 title={
                                     "Businesses that rely on AI for healthcare, finance, and food industry solutions where **mistakes can cost real money or lives**. "
                                 }
@@ -243,6 +268,13 @@ const About = () => {
                         </Grid2>
                         <Grid2 item size={{ xs: 2, sm: 4, md: 6 }}>
                             <IconCard
+                                icon={
+                                    <BiotechIcon
+                                        sx={{
+                                            fontSize: "60px",
+                                        }}
+                                    />
+                                }
                                 title={
                                     "Researchers using AI to experiment but needing accuracy and stability."
                                 }
