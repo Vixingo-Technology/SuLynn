@@ -34,11 +34,13 @@ export default function IconCard({ title, description }) {
             <Box sx={{ minWidth: 275, mx: "auto", height: "100%", px: 2 }}>
                 <Card
                     variant="outlined"
+                    elevation={4}
                     sx={{
                         padding: 1,
                         borderRadius: "0px",
                         height: "100%",
                         backgroundColor: "transparent",
+                        borderColor: "#ffffff10",
                     }}
                 >
                     {card}

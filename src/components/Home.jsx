@@ -395,8 +395,8 @@ const Home = () => {
                                     my: 5,
                                 }}
                             >
-                                SuLynn + MorphicBrain: <br /> The Ultimate AI
-                                Coding Powerhouse
+                                SuLynn + MorphicBrain: <br /> The Ultimate LLM
+                                Powerhouse
                             </Typography>
                             <Typography
                                 variant="body1"

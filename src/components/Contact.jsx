@@ -34,13 +34,13 @@ export default function Contact() {
                         <Typography variant="h4" sx={{ my: 2 }}>
                             Social Media
                         </Typography>
-                        <IconButton size="large">
+                        <IconButton size="large" sx={{ color: "#fff" }}>
                             <FacebookIcon fontSize="32px" />
                         </IconButton>
-                        <IconButton size="large">
+                        <IconButton size="large" sx={{ color: "#fff" }}>
                             <XIcon fontSize="32px" />
                         </IconButton>
-                        <IconButton size="large">
+                        <IconButton size="large" sx={{ color: "#fff" }}>
                             <LinkedInIcon fontSize="32px" />
                         </IconButton>
                     </Box>
