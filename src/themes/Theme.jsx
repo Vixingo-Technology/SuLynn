@@ -95,6 +95,36 @@ export const ThemeProvider = ({ children }) => {
                         },
                     },
                 },
+                MuiOutlinedInput: {
+                    styleOverrides: {
+                        root: {
+                            "& .MuiOutlinedInput-notchedOutline": {
+                                borderColor: "#ffffff60", // default border color
+                            },
+                            "&:hover .MuiOutlinedInput-notchedOutline": {
+                                // borderColor: "blue", // border color on hover
+                            },
+                            "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+                                // borderColor: "red", // border color when focused
+                            },
+                        },
+                    },
+                },
+                MuiInput: {
+                    styleOverrides: {
+                        underline: {
+                            "&:before": {
+                                borderBottom: "1px solid #fff", // default
+                            },
+                            "&:hover:not(.Mui-disabled):before": {
+                                // borderBottom: "2px solid blue", // on hover
+                            },
+                            "&.Mui-focused:after": {
+                                // borderBottom: "2px solid red", // on focus
+                            },
+                        },
+                    },
+                },
             },
         });
     // Detect system preference

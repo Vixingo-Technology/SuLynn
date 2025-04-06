@@ -79,23 +79,12 @@ export default function Footer() {
                             </Typography>
                             <Stack spacing={1}>
                                 <NavLink
-                                    to={"/"}
-                                    style={{ textDecoration: "none" }}
-                                >
-                                    Developer Hub
-                                </NavLink>
-                                <NavLink
                                     to="/blog"
                                     style={{ textDecoration: "none" }}
                                 >
                                     Blog posts
                                 </NavLink>
-                                <NavLink
-                                    to="/terms"
-                                    style={{ textDecoration: "none" }}
-                                >
-                                    Code Samples
-                                </NavLink>
+
                                 <NavLink
                                     to="/cookies"
                                     style={{ textDecoration: "none" }}
@@ -125,7 +114,8 @@ export default function Footer() {
                                     X
                                 </NavLink>{" "}
                                 <NavLink
-                                    to="/"
+                                    target="_blank"
+                                    to="https://www.linkedin.com/in/morphicbrain/"
                                     style={{ textDecoration: "none" }}
                                 >
                                     LinkedIn
@@ -202,12 +192,6 @@ export default function Footer() {
                                     About
                                 </NavLink>
                                 <NavLink
-                                    to="/careers"
-                                    style={{ textDecoration: "none" }}
-                                >
-                                    Careers
-                                </NavLink>
-                                <NavLink
                                     to="/team"
                                     style={{ textDecoration: "none" }}
                                 >
@@ -245,8 +229,8 @@ export default function Footer() {
                                     }}
                                 >
                                     Copyright &copy; {new Date().getFullYear()}{" "}
-                                    SuLynn <br /> All rights reserved by SuLynn
-                                    LLC.
+                                    SuLynn <br /> All rights reserved by
+                                    MorphicBrain-AI LLC.
                                 </Typography>{" "}
                             </Grid>
                             {/* <Grid

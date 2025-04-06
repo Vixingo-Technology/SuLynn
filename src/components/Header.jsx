@@ -54,7 +54,7 @@ ElevationScroll.propTypes = {
 };
 
 const drawerWidth = 240;
-const navItems = ["About", "pricing", "Contact", "Synergy"];
+const navItems = ["About", "pricing", "Contact", "download"];
 
 function Header(props) {
     // const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
@@ -88,7 +88,7 @@ function Header(props) {
                         </ListItem>
                     </NavLink>
                 ))}
-                <NavLink to={"/login"}>
+                <NavLink to={"/auth/login"}>
                     <Button variant="contained" sx={{ my: 1 }} fullWidth>
                         Login
                     </Button>
@@ -151,7 +151,7 @@ function Header(props) {
                                     </Button>
                                 </NavLink>
                             ))}
-                            <NavLink to={"/login"}>
+                            <NavLink to={"/auth/login"}>
                                 <Button variant="contained" sx={{ ml: 2 }}>
                                     Login
                                 </Button>

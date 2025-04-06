@@ -7,6 +7,8 @@ import { Box, Button, Grid2, Paper, Stack, Typography } from "@mui/material";
 import { ArrowRightAltSharp } from "@mui/icons-material";
 import logo1 from "../assets/tt.png";
 import logo2 from "../assets/mb.png";
+import logo3 from "../assets/av.png";
+import logo4 from "../assets/l2.png";
 import start from "../assets/start.png";
 import WorkCard from "./cards/WorkCard";
 import PrimeTitle from "./Headings/PrimeTitle";
@@ -14,6 +16,7 @@ import NewCard from "./cards/NewCard";
 import f1 from "../assets/f1.png";
 import f2 from "../assets/f2.gif";
 import f3 from "../assets/f3.png";
+
 import IconCard from "./cards/IconCard";
 import map from "../assets/map.png";
 import { NavLink } from "react-router-dom";
@@ -127,12 +130,10 @@ const Home = () => {
                     flexWrap: "wrap",
                 }}
             >
-                <img src={logo1} alt="" className="hover_effect" height={60} />
                 <img src={logo2} alt="" className="hover_effect" height={40} />
                 <img src={logo1} alt="" className="hover_effect" height={60} />
-                <img src={logo2} alt="" className="hover_effect" height={40} />
-                <img src={logo1} alt="" className="hover_effect" height={60} />
-                <img src={logo2} alt="" className="hover_effect" height={40} />
+                <img src={logo3} alt="" className="hover_effect" height={50} />
+                <img src={logo4} alt="" className="hover_effect" height={60} />
             </Box>
 
             <Box sx={{ my: 10, textAlign: "center" }}>

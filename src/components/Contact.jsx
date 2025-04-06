@@ -4,6 +4,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import XIcon from "@mui/icons-material/X";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import ContactForm from "./forms/ContactForm";
+import { NavLink } from "react-router-dom";
 export default function Contact() {
     return (
         <>
@@ -11,7 +12,7 @@ export default function Contact() {
                 container
                 spacing={2}
                 columns={12}
-                sx={{ maxWidth: "1100px", marginX: "auto" }}
+                sx={{ maxWidth: "1100px", marginX: "auto", mt: "40px" }}
             >
                 <Grid2 item size={{ xs: 12, md: 6 }}>
                     <Box
@@ -25,8 +26,8 @@ export default function Contact() {
                         </Typography>
                         <Typography variant="body2">
                             Email:{" "}
-                            <a href="mailto:triktrak@gmail.com">
-                                sulynn@gmail.com
+                            <a href="mailto:info@sulynn-ai.com">
+                                info@sulynn-ai.com
                             </a>
                         </Typography>
                     </Box>
@@ -40,9 +41,14 @@ export default function Contact() {
                         <IconButton size="large" sx={{ color: "#fff" }}>
                             <XIcon fontSize="32px" />
                         </IconButton>
-                        <IconButton size="large" sx={{ color: "#fff" }}>
-                            <LinkedInIcon fontSize="32px" />
-                        </IconButton>
+                        <NavLink
+                            target="_blank"
+                            to="https://www.linkedin.com/in/morphicbrain/"
+                        >
+                            <IconButton size="large" sx={{ color: "#fff" }}>
+                                <LinkedInIcon fontSize="32px" />
+                            </IconButton>
+                        </NavLink>
                     </Box>
                 </Grid2>
                 <Grid2 item size={{ xs: 12, md: 6 }}>

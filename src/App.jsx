@@ -12,23 +12,29 @@ import PrivacyPolicy from "./components/PrivacyPolicy.jsx";
 import Login from "./components/Login.jsx";
 import DownloadPage from "./components/DownloadPage";
 import "./styles.css";
+import Signup from "./components/SignUp.jsx";
+import AuthLayout from "./layouts/AuthLayout.jsx";
+import LandingLayout from "./layouts/LandingLayout.jsx";
 
 const App = () => {
     return (
         <Router>
-            <div className="app-container">
-                <Header />
-                <Routes>
+            <Routes>
+                <Route path="/" element={<LandingLayout />}>
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/pricing" element={<Pricing />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/privacy" element={<PrivacyPolicy />} />
-                    <Route path="/login" element={<Login />} />
+                    <Route path="/signup" element={<Signup />} />
                     <Route path="/download" element={<DownloadPage />} />
-                </Routes>
-                <Footer />
-            </div>
+                </Route>
+
+                <Route path="auth" element={<AuthLayout />}>
+                    <Route path="login" element={<Login />} />
+                    <Route path="signup" element={<Signup />} />
+                </Route>
+            </Routes>
         </Router>
     );
 };
