@@ -69,8 +69,13 @@ const DownloadPage = () => {
                     gutterBottom
                     className="text_gradient_animate"
                 >
-                    SuLynn Browser Extension
+                    SuLynn
                 </Typography>
+                <Typography variant="h6" gutterBottom>
+                    Browser Extension
+                </Typography>
+                <br />
+
                 <Box
                     sx={{
                         padding: "20px",
@@ -92,6 +97,7 @@ const DownloadPage = () => {
                         and Gemini 2.0 Pro.
                     </Typography>
                 </Box>
+                <br />
                 <Box
                     sx={{
                         display: "flex",
@@ -108,6 +114,7 @@ const DownloadPage = () => {
                     />
                     <EpicCard title={"10M+"} des={"Active Users"} />
                 </Box>
+                <br />
                 <Box sx={{ mt: 2 }}>
                     <Button
                         variant="contained"
@@ -128,6 +135,7 @@ const DownloadPage = () => {
                         Add to Chorme
                     </Button> */}
                 </Box>
+
                 <Box
                     sx={{
                         mt: 2,
