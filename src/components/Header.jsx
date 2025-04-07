@@ -54,7 +54,7 @@ ElevationScroll.propTypes = {
 };
 
 const drawerWidth = 240;
-const navItems = ["About", "pricing", "Contact", "download"];
+const navItems = ["About", "pricing", "Contact", "Synergy", "download"];
 
 function Header(props) {
     // const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");

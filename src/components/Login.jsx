@@ -75,7 +75,7 @@ export default function Login() {
                             Welcome
                         </Typography>
                         <Typography variant="body1" sx={{ my: 2 }}>
-                            Log in to MB to continue to MB Dashboard.
+                            Log in to SuLynn to continue to Dashboard.
                         </Typography>
                         <Stack sx={{ gap: 2, my: 2 }}>
                             {" "}

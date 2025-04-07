@@ -113,12 +113,12 @@ const DownloadPage = () => {
                         variant="contained"
                         size="large"
                         color="primary"
-                        sx={{ fontSize: "1.2rem" }}
+                        sx={{ fontSize: "1.2rem", width: "200px" }}
                         onClick={() => navigate("/pricing")}
                     >
                         Download
                     </Button>
-                    <Button
+                    {/* <Button
                         variant="outlined"
                         size="large"
                         color="primary"
@@ -126,7 +126,7 @@ const DownloadPage = () => {
                         onClick={() => navigate("/pricing")}
                     >
                         Add to Chorme
-                    </Button>
+                    </Button> */}
                 </Box>
                 <Box
                     sx={{

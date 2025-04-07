@@ -30,7 +30,9 @@ const Pricing = () => {
     }, []);
 
     return (
-        <Box sx={{ maxWidth: "1440px", padding: "20px" }}>
+        <Box
+            sx={{ maxWidth: "1140px", mx: "auto", padding: "20px", mb: "40px" }}
+        >
             <Typography variant="h4" align="center" sx={{ mt: 5, mb: 5 }}>
                 Subscription Plan
             </Typography>

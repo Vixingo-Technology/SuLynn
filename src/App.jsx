@@ -15,6 +15,7 @@ import "./styles.css";
 import Signup from "./components/SignUp.jsx";
 import AuthLayout from "./layouts/AuthLayout.jsx";
 import LandingLayout from "./layouts/LandingLayout.jsx";
+import Synergy from "./components/Synergy.jsx";
 
 const App = () => {
     return (
@@ -26,7 +27,7 @@ const App = () => {
                     <Route path="/pricing" element={<Pricing />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/privacy" element={<PrivacyPolicy />} />
-                    <Route path="/signup" element={<Signup />} />
+                    <Route path="/synergy" element={<Synergy />} />
                     <Route path="/download" element={<DownloadPage />} />
                 </Route>
 
@@ -34,6 +35,10 @@ const App = () => {
                     <Route path="login" element={<Login />} />
                     <Route path="signup" element={<Signup />} />
                 </Route>
+                <Route
+                    path="*"
+                    element={<h1 style={{ margin: "300px" }}>404 Not Found</h1>}
+                />
             </Routes>
         </Router>
     );
