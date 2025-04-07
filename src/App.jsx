@@ -12,7 +12,7 @@ import PrivacyPolicy from "./components/PrivacyPolicy.jsx";
 import Login from "./components/Login.jsx";
 import DownloadPage from "./components/DownloadPage";
 import "./styles.css";
-import Signup from "./components/SignUp.jsx";
+import Signup from "./components/Signup.jsx";
 import AuthLayout from "./layouts/AuthLayout.jsx";
 import LandingLayout from "./layouts/LandingLayout.jsx";
 import Synergy from "./components/Synergy.jsx";
