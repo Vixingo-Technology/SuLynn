@@ -1,4 +1,4 @@
-import { Box, Grid2, IconButton, Typography } from "@mui/material";
+import { Box, Grid, IconButton, Typography } from "@mui/material";
 import React from "react";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import XIcon from "@mui/icons-material/X";
@@ -8,13 +8,13 @@ import { NavLink } from "react-router-dom";
 export default function Contact() {
     return (
         <>
-            <Grid2
+            <Grid
                 container
                 spacing={2}
                 columns={12}
                 sx={{ maxWidth: "1100px", marginX: "auto", mt: "40px" }}
             >
-                <Grid2 item size={{ xs: 12, md: 6 }}>
+                <Grid size={{ xs: 12, md: 6 }}>
                     <Box
                         sx={{ my: 8, textAlign: { xs: "center", md: "left" } }}
                     >
@@ -50,11 +50,11 @@ export default function Contact() {
                             </IconButton>
                         </NavLink>
                     </Box>
-                </Grid2>
-                <Grid2 item size={{ xs: 12, md: 6 }}>
+                </Grid>
+                <Grid size={{ xs: 12, md: 6 }}>
                     <ContactForm />
-                </Grid2>
-            </Grid2>
+                </Grid>
+            </Grid>
         </>
     );
 }

@@ -5,7 +5,6 @@ import {
     Box,
     Typography,
     Container,
-    Grid,
     Paper,
     Avatar,
     List,
@@ -14,7 +13,7 @@ import {
     ListItemText,
     Button,
     Card,
-    Grid2,
+    Grid,
 } from "@mui/material";
 import {
     Groups,
@@ -85,7 +84,7 @@ function Synergy() {
                     />
 
                     <Grid container spacing={4} mb={6}>
-                        <Grid item xs={12} md={6}>
+                        <Grid xs={12} md={6}>
                             <Typography variant="h4">
                                 🔗 What is Synergy?
                             </Typography>
@@ -140,7 +139,7 @@ function Synergy() {
                                 ))}
                             </Grid>
                         </Grid>
-                        <Grid item xs={12} md={6}>
+                        <Grid xs={12} md={6}>
                             <Box
                                 sx={{
                                     maxWidth: "500px",
@@ -207,12 +206,8 @@ function Synergy() {
                             🚀 Synergy in Action
                         </Typography>
 
-                        <Grid2
-                            container
-                            columns={{ xs: 1, md: 12 }}
-                            spacing={2}
-                        >
-                            <Grid2 size={{ xs: 1, md: 4 }}>
+                        <Grid container columns={{ xs: 1, md: 12 }} spacing={2}>
+                            <Grid size={{ xs: 1, md: 4 }}>
                                 <Box
                                     sx={{
                                         display: "flex",
@@ -230,36 +225,36 @@ function Synergy() {
                                         <strong>With Synergy:</strong>
                                     </Typography>
                                 </Box>
-                            </Grid2>
-                            <Grid2 size={{ xs: 1, md: 4 }}>
+                            </Grid>
+                            <Grid size={{ xs: 1, md: 4 }}>
                                 <WorkCard
                                     title={"01."}
                                     des={
                                         "Ambiguity Detector highlights unclear terms"
                                     }
                                 />
-                            </Grid2>
-                            <Grid2 size={{ xs: 1, md: 4 }}>
+                            </Grid>
+                            <Grid size={{ xs: 1, md: 4 }}>
                                 <WorkCard
                                     title={"02."}
                                     des={
                                         "Context modules flag the contradiction"
                                     }
                                 />
-                            </Grid2>
-                            <Grid2 size={{ xs: 1, md: 4 }}>
+                            </Grid>
+                            <Grid size={{ xs: 1, md: 4 }}>
                                 <WorkCard
                                     title={"03."}
                                     des={"Syntax flow aligns the logic"}
                                 />
-                            </Grid2>
-                            <Grid2 size={{ xs: 1, md: 4 }}>
+                            </Grid>
+                            <Grid size={{ xs: 1, md: 4 }}>
                                 <WorkCard
                                     title={"04."}
                                     des={"ASI-Veritas verifies facts"}
                                 />
-                            </Grid2>
-                            <Grid2 size={{ xs: 1, md: 4 }}>
+                            </Grid>
+                            <Grid size={{ xs: 1, md: 4 }}>
                                 <Box
                                     sx={{
                                         minHeight: "200px",
@@ -279,8 +274,8 @@ function Synergy() {
                                         style={{ rotate: "180deg" }}
                                     />
                                 </Box>
-                            </Grid2>
-                        </Grid2>
+                            </Grid>
+                        </Grid>
                     </Box>
 
                     <Box my={6}>

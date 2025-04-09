@@ -2,7 +2,7 @@
 
 import React from "react";
 import "../styles.css";
-import { Box, Grid, Grid2, Paper, Stack, Typography } from "@mui/material";
+import { Box, Grid, Paper, Stack, Typography } from "@mui/material";
 import IconCard from "./cards/IconCard";
 import PrimeTitle from "./Headings/PrimeTitle";
 import Contact from "./Contact";
@@ -62,7 +62,7 @@ const About = () => {
                         " with tools that ensure reliability, clarity, and safety when working with intelligent code-generating systems."
                     }
                 />
-                <Grid2
+                <Grid
                     container
                     spacing={2}
                     sx={{
@@ -74,7 +74,7 @@ const About = () => {
                     columns={{ xs: 1, sm: 8, md: 12 }}
                 >
                     {" "}
-                    <Grid2 size={{ xs: 1, sm: 8, md: 6 }}>
+                    <Grid size={{ xs: 1, sm: 8, md: 6 }}>
                         <Typography
                             variant="h4"
                             sx={{ textAlign: "left", p: 2 }}
@@ -88,11 +88,11 @@ const About = () => {
                             produced by an LLM is checked, assembled, and
                             trusted
                         </Typography>
-                    </Grid2>
-                    <Grid2 size={{ xs: 1, sm: 8, md: 6 }} sx={{ p: 3 }}>
+                    </Grid>
+                    <Grid size={{ xs: 1, sm: 8, md: 6 }} sx={{ p: 3 }}>
                         <img src={art} alt="" width={"100%"} />
-                    </Grid2>
-                </Grid2>
+                    </Grid>
+                </Grid>
                 <PrimeTitle
                     title={"Why We Built SuLynn"}
                     subTitle={"AI code generators are powerful"}
@@ -148,59 +148,59 @@ const About = () => {
                     subTitle={"What Makes SuLynn Different?"}
                     // subTitle={""}
                 />
-                <Grid2
+                <Grid
                     container
                     spacing={2}
                     sx={{ my: 8, maxWidth: "1140px", mx: "auto" }}
                     columns={{ xs: 1, sm: 8, md: 12 }}
                 >
-                    <Grid2 item size={{ xs: 2, sm: 4, md: 4 }}>
+                    <Grid size={{ xs: 2, sm: 4, md: 4 }}>
                         <IconCard
                             title={"Real-time AI monitoring"}
                             description={
                                 "Checks every AI suggestion every 3 seconds."
                             }
                         />
-                    </Grid2>
-                    <Grid2 item size={{ xs: 2, sm: 4, md: 4 }}>
+                    </Grid>
+                    <Grid size={{ xs: 2, sm: 4, md: 4 }}>
                         <IconCard
                             title={"Auto Code Assembly"}
                             description={
                                 "Takes code fragments and builds complete, working scripts."
                             }
                         />
-                    </Grid2>
-                    <Grid2 item size={{ xs: 2, sm: 4, md: 4 }}>
+                    </Grid>
+                    <Grid size={{ xs: 2, sm: 4, md: 4 }}>
                         <IconCard
                             title={"Hallucination Detection "}
                             description={
                                 "Alerts you when AI writes code that doesn't make sense"
                             }
                         />
-                    </Grid2>
-                    <Grid2 item size={{ xs: 2, sm: 4, md: 4 }}>
+                    </Grid>
+                    <Grid size={{ xs: 2, sm: 4, md: 4 }}>
                         <IconCard
                             title={"Focus Management"}
                             description={
                                 "Prevents AI from drifting off-topic in long chats."
                             }
                         />
-                    </Grid2>
-                    <Grid2 item size={{ xs: 2, sm: 4, md: 4 }}>
+                    </Grid>
+                    <Grid size={{ xs: 2, sm: 4, md: 4 }}>
                         <IconCard
                             title={" Version Control "}
                             description={
                                 "Keeps trusted versions of code you can always restore."
                             }
                         />
-                    </Grid2>
-                    <Grid2 item size={{ xs: 2, sm: 4, md: 4 }}>
+                    </Grid>
+                    <Grid size={{ xs: 2, sm: 4, md: 4 }}>
                         <IconCard
                             title={"Lightning Fast"}
                             description={`Analyzes and validates AI output in under 1/10th of a second.`}
                         />
-                    </Grid2>
-                </Grid2>
+                    </Grid>
+                </Grid>
                 <PrimeTitle
                     subTitle={
                         "Powered by MorphicBrain — Advanced AI core modules for deep analysis, learning, and validation."
@@ -209,13 +209,13 @@ const About = () => {
                 <br />
                 <PrimeTitle title={"Who Is SuLynn For?"} />
                 <Box>
-                    <Grid2
+                    <Grid
                         container
                         spacing={2}
                         sx={{ my: 8, maxWidth: "1140px", mx: "auto" }}
                         columns={{ xs: 1, sm: 8, md: 12 }}
                     >
-                        <Grid2 item size={{ xs: 2, sm: 4, md: 6 }}>
+                        <Grid size={{ xs: 2, sm: 4, md: 6 }}>
                             <IconCard
                                 icon={
                                     <GrainIcon
@@ -231,8 +231,8 @@ const About = () => {
                                 //     "Checks every AI suggestion every 3 seconds."
                                 // }
                             />
-                        </Grid2>
-                        <Grid2 item size={{ xs: 2, sm: 4, md: 6 }}>
+                        </Grid>
+                        <Grid size={{ xs: 2, sm: 4, md: 6 }}>
                             <IconCard
                                 icon={
                                     <TerminalIcon
@@ -248,8 +248,8 @@ const About = () => {
                                 //     "Takes code fragments and builds complete, working scripts."
                                 // }
                             />
-                        </Grid2>
-                        <Grid2 item size={{ xs: 2, sm: 4, md: 6 }}>
+                        </Grid>
+                        <Grid size={{ xs: 2, sm: 4, md: 6 }}>
                             <IconCard
                                 icon={
                                     <DomainAddIcon
@@ -265,8 +265,8 @@ const About = () => {
                                 //     "Alerts you when AI writes code that doesn't make sense"
                                 // }
                             />
-                        </Grid2>
-                        <Grid2 item size={{ xs: 2, sm: 4, md: 6 }}>
+                        </Grid>
+                        <Grid size={{ xs: 2, sm: 4, md: 6 }}>
                             <IconCard
                                 icon={
                                     <BiotechIcon
@@ -279,8 +279,8 @@ const About = () => {
                                     "Researchers using AI to experiment but needing accuracy and stability."
                                 }
                             />
-                        </Grid2>
-                    </Grid2>
+                        </Grid>
+                    </Grid>
                 </Box>
                 <Box mb={4}>
                     <PrimeTitle
@@ -328,53 +328,53 @@ const About = () => {
                         "SuLynn is not just another AI tool. It's powered by MorphicBrain, a cutting-edge AI popwerhouse system equipped with:"
                     }
                 />
-                <Grid2
+                <Grid
                     container
                     spacing={2}
                     sx={{ my: 8, maxWidth: "1140px", mx: "auto" }}
                     columns={{ xs: 1, sm: 8, md: 12 }}
                 >
-                    <Grid2 item size={{ xs: 2, sm: 4, md: 4 }}>
+                    <Grid size={{ xs: 2, sm: 4, md: 4 }}>
                         <IconCard
                             title={"ASI Veritas"}
                             description={
                                 "Advanced fact-checking AI for truth validation."
                             }
                         />
-                    </Grid2>
-                    <Grid2 item size={{ xs: 2, sm: 4, md: 4 }}>
+                    </Grid>
+                    <Grid size={{ xs: 2, sm: 4, md: 4 }}>
                         <IconCard
                             title={"Deep Learning and Algorithm Generator"}
                             description={
                                 "AI that learns, evolves, and generates."
                             }
                         />
-                    </Grid2>
-                    <Grid2 item size={{ xs: 2, sm: 4, md: 4 }}>
+                    </Grid>
+                    <Grid size={{ xs: 2, sm: 4, md: 4 }}>
                         <IconCard
                             title={"MorganLogic "}
                             description={
                                 "Specialized for Fintech and high-stakes industries."
                             }
                         />
-                    </Grid2>
-                    <Grid2 item size={{ xs: 2, sm: 4, md: 6 }}>
+                    </Grid>
+                    <Grid size={{ xs: 2, sm: 4, md: 6 }}>
                         <IconCard
                             title={"KnowledgeHub"}
                             description={
                                 "Always connected to fresh, validated information from the web."
                             }
                         />
-                    </Grid2>
-                    <Grid2 item size={{ xs: 2, sm: 8, md: 6 }}>
+                    </Grid>
+                    <Grid size={{ xs: 2, sm: 8, md: 6 }}>
                         <IconCard
                             title={" Neuromorphic Computing "}
                             description={
                                 "AI that thinks like a brain — fast, adaptive, and secure."
                             }
                         />
-                    </Grid2>
-                </Grid2>
+                    </Grid>
+                </Grid>
                 <PrimeTitle title={"Got questions or want to collaborate?  "} />
                 <Contact />
             </Box>

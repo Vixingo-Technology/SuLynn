@@ -3,7 +3,7 @@
 import React from "react";
 import "../styles.css";
 import hero from "../assets/hero.png";
-import { Box, Button, Grid2, Paper, Stack, Typography } from "@mui/material";
+import { Box, Button, Grid, Paper, Stack, Typography } from "@mui/material";
 import { ArrowRightAltSharp } from "@mui/icons-material";
 import logo1 from "../assets/tt.png";
 import logo2 from "../assets/mb.png";
@@ -31,7 +31,7 @@ const Home = () => {
                     margin: "auto",
                 }}
             >
-                <Grid2
+                <Grid
                     container
                     spacing={3}
                     columns={{ xs: 1, md: 12 }}
@@ -44,7 +44,7 @@ const Home = () => {
                         // borderRadius: "10px",
                     }}
                 >
-                    <Grid2 item size={{ xs: 1, md: 7 }}>
+                    <Grid item size={{ xs: 1, md: 7 }}>
                         {" "}
                         <Typography
                             variant="h5"
@@ -108,14 +108,14 @@ const Home = () => {
                             {" "}
                             Learn More
                         </Button>
-                    </Grid2>
-                    <Grid2 size={{ xs: 1, md: 5 }}>
+                    </Grid>
+                    <Grid size={{ xs: 1, md: 5 }}>
                         <Box sx={{ textAlign: "center" }}>
                             {" "}
                             <img src={hero} alt="" width={"100%"} />
                         </Box>
-                    </Grid2>
-                </Grid2>
+                    </Grid>
+                </Grid>
             </Box>
             <Box
                 sx={{
@@ -221,7 +221,7 @@ const Home = () => {
                 >
                     How SuLynn Works
                 </Typography> */}
-                <Grid2
+                <Grid
                     container
                     spacing={3}
                     columns={{ xs: 1, md: 12 }}
@@ -230,7 +230,7 @@ const Home = () => {
                         gap: 2,
                     }}
                 >
-                    <Grid2
+                    <Grid
                         item
                         size={{ xs: 1, md: 3 }}
                         sx={
@@ -259,48 +259,48 @@ const Home = () => {
                                 Frustration
                             </Typography>
                         </Box>
-                    </Grid2>
-                    <Grid2 item size={{ xs: 1, md: 3 }}>
+                    </Grid>
+                    <Grid item size={{ xs: 1, md: 3 }}>
                         <WorkCard
                             title={"01."}
                             des={" Real-time AI output monitoring."}
                         />
-                    </Grid2>
-                    <Grid2 item size={{ xs: 1, md: 3 }}>
+                    </Grid>
+                    <Grid item size={{ xs: 1, md: 3 }}>
                         <WorkCard
                             title={"02."}
                             des={" Automatic code assembly from fragments."}
                         />
-                    </Grid2>
-                    <Grid2 item size={{ xs: 1, md: 3 }}>
+                    </Grid>
+                    <Grid item size={{ xs: 1, md: 3 }}>
                         <WorkCard
                             title={"03."}
                             des={" Alerts on AI hallucination or deviation."}
                         />
-                    </Grid2>
-                    <Grid2 item size={{ xs: 1, md: 3 }}>
+                    </Grid>
+                    <Grid item size={{ xs: 1, md: 3 }}>
                         <WorkCard
                             title={"04."}
                             des={" Safe checkpointing and comparison."}
                         />
-                    </Grid2>
-                    <Grid2 item size={{ xs: 1, md: 3 }}>
+                    </Grid>
+                    <Grid item size={{ xs: 1, md: 3 }}>
                         <WorkCard
                             title={"05."}
                             des={
                                 " Built-in for Healthcare, Finance, and Natural Foods industries."
                             }
                         />
-                    </Grid2>
-                    <Grid2 item size={{ xs: 1, md: 3 }}>
+                    </Grid>
+                    <Grid item size={{ xs: 1, md: 3 }}>
                         <WorkCard
                             title={"06."}
                             des={
                                 " Fast performance — checks AI output in under 1/10th of a second."
                             }
                         />
-                    </Grid2>
-                    <Grid2 item size={{ xs: 1, md: 3 }}>
+                    </Grid>
+                    <Grid item size={{ xs: 1, md: 3 }}>
                         <Box
                             sx={{
                                 minHeight: "200px",
@@ -319,8 +319,8 @@ const Home = () => {
                                 style={{ rotate: "180deg" }}
                             />
                         </Box>
-                    </Grid2>
-                </Grid2>
+                    </Grid>
+                </Grid>
                 <PrimeTitle
                     title="Built for High-Stakes Industries"
                     subTitle={
@@ -330,7 +330,7 @@ const Home = () => {
                         "SuLynn is designed to work in any field, but it truly shines in industries where mistakes are costly — financially, ethically, or for human lives."
                     }
                 />
-                <Grid2
+                <Grid
                     sx={{ mt: 4, maxWidth: "1200px", mx: "auto" }}
                     container
                     spacing={4}
@@ -338,7 +338,7 @@ const Home = () => {
                     alignItems="center"
                     columns={{ xs: 1, sm: 6, md: 12 }}
                 >
-                    <Grid2 item size={{ xs: 1, sm: 4, md: 4 }}>
+                    <Grid item size={{ xs: 1, sm: 4, md: 4 }}>
                         <NewCard
                             imgsrc={f1}
                             title={"🏥 Healthcare "}
@@ -346,8 +346,8 @@ const Home = () => {
                                 "  Helping AI generate safe and compliant code for medical research, patient data analysis, and health tech solutions."
                             }
                         />
-                    </Grid2>
-                    <Grid2 item size={{ xs: 1, sm: 4, md: 4 }}>
+                    </Grid>
+                    <Grid item size={{ xs: 1, sm: 4, md: 4 }}>
                         <NewCard
                             imgsrc={f2}
                             title={"💰 Finance "}
@@ -355,8 +355,8 @@ const Home = () => {
                                 " Preventing AI mistakes in fraud detection, algorithmic trading, and financial compliance tools."
                             }
                         />
-                    </Grid2>
-                    <Grid2 item size={{ xs: 1, sm: 4, md: 4 }}>
+                    </Grid>
+                    <Grid item size={{ xs: 1, sm: 4, md: 4 }}>
                         <NewCard
                             imgsrc={f3}
                             title={"🌿 Natural Foods & Nutrition "}
@@ -364,13 +364,13 @@ const Home = () => {
                                 " Empowering smarter AI solutions for food production, supply chain, and nutrition science. "
                             }
                         />
-                    </Grid2>
-                </Grid2>
+                    </Grid>
+                </Grid>
             </Box>
 
             <Box sx={{ my: 10 }}>
-                <Grid2 container columns={{ xs: 1, md: 12 }}>
-                    <Grid2
+                <Grid container columns={{ xs: 1, md: 12 }}>
+                    <Grid
                         item
                         size={{ xs: 1, md: 6 }}
                         sx={{
@@ -380,8 +380,8 @@ const Home = () => {
                         <Box sx={{ textAlign: "center" }}>
                             <img src={map} alt="" width={"100%"} />
                         </Box>
-                    </Grid2>
-                    <Grid2
+                    </Grid>
+                    <Grid
                         item
                         size={{ xs: 1, md: 6 }}
                         sx={{ bgcolor: "primary.main", opacity: "80%" }}
@@ -421,8 +421,8 @@ const Home = () => {
                                 </Button>
                             </NavLink>
                         </Box>
-                    </Grid2>
-                </Grid2>
+                    </Grid>
+                </Grid>
             </Box>
             <Box sx={{ textAlign: "center", my: 10 }}>
                 <PrimeTitle
@@ -433,37 +433,37 @@ const Home = () => {
                         "How SuLynn Keeps AI in Check — in 3 Simple Steps"
                     }
                 />
-                <Grid2
+                <Grid
                     container
                     spacing={2}
                     sx={{ my: 8, maxWidth: "1140px", mx: "auto" }}
                     columns={{ xs: 1, sm: 8, md: 12 }}
                 >
-                    <Grid2 item size={{ xs: 2, sm: 4, md: 4 }}>
+                    <Grid item size={{ xs: 2, sm: 4, md: 4 }}>
                         <IconCard
                             title={"Monitor"}
                             description={
                                 "SuLynn checks every line of code your AI writes — every 3 seconds."
                             }
                         />
-                    </Grid2>
-                    <Grid2 item size={{ xs: 2, sm: 4, md: 4 }}>
+                    </Grid>
+                    <Grid item size={{ xs: 2, sm: 4, md: 4 }}>
                         <IconCard
                             title={"Validate"}
                             description={
                                 "It alerts you when code is wrong, missing, or altered."
                             }
                         />
-                    </Grid2>
-                    <Grid2 item size={{ xs: 2, sm: 4, md: 4 }}>
+                    </Grid>
+                    <Grid item size={{ xs: 2, sm: 4, md: 4 }}>
                         <IconCard
                             title={"Assemble & Protect"}
                             description={
                                 "SuLynn assembles complete, ready-to-run scripts, and stores safe checkpoints."
                             }
                         />
-                    </Grid2>
-                </Grid2>
+                    </Grid>
+                </Grid>
                 <Typography variant="h3" sx={{ fontWeight: "bold" }}>
                       Ready to Get Started with SuLynn? {" "}
                 </Typography>

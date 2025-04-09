@@ -1,8 +1,6 @@
-import Grid from "@mui/material/Grid2";
-
 import React from "react";
 import Logo from "../components/dynamic/Logo";
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Button, Typography, Grid } from "@mui/material";
 import SignupForm from "../components/forms/SignupForm";
 
 function Signup() {
@@ -15,7 +13,6 @@ function Signup() {
                 sx={{ alignItems: "center" }}
             >
                 <Grid
-                    item
                     size={{ xs: 2, sm: 4, md: 6 }}
                     sx={{
                         background: (theme) =>
@@ -80,7 +77,6 @@ function Signup() {
                     </Box>
                 </Grid>
                 <Grid
-                    item
                     size={{ xs: 2, sm: 4, md: 6 }}
                     sx={{
                         // bgcolor: "red",

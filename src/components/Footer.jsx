@@ -1,7 +1,7 @@
 // File Path: C:\SuLynn\dashboard\public_site\src\components\Footer.js
 import { Box, Stack, Typography } from "@mui/material";
 import React from "react";
-import Grid from "@mui/material/Grid2";
+import Grid from "@mui/material/Grid";
 import Logo from "./dynamic/Logo";
 import { NavLink } from "react-router";
 import SubForm from "./forms/SubForm";
@@ -39,7 +39,7 @@ export default function Footer() {
                         }
                         columns={{ xs: 2, md: 12 }}
                     >
-                        <Grid item size={{ xs: 2, md: 4 }}>
+                        <Grid size={{ xs: 2, md: 4 }}>
                             <Box
                                 sx={{
                                     display: "flex",
@@ -70,7 +70,7 @@ export default function Footer() {
                             </Typography>{" "} */}
                         </Grid>
                         {/* Developers */}
-                        <Grid item size={{ xs: 1, md: 2 }} sx={{ mt: 1 }}>
+                        <Grid size={{ xs: 1, md: 2 }} sx={{ mt: 1 }}>
                             <Typography
                                 variant="body2"
                                 sx={{ color: "text.secondary", mb: 1 }}
@@ -99,7 +99,7 @@ export default function Footer() {
                                 </NavLink>
                             </Stack>
                         </Grid>
-                        <Grid item size={{ xs: 1, md: 2 }} sx={{ mt: 1 }}>
+                        <Grid size={{ xs: 1, md: 2 }} sx={{ mt: 1 }}>
                             <Typography
                                 variant="body2"
                                 sx={{ color: "text.secondary", mb: 1 }}
@@ -134,7 +134,7 @@ export default function Footer() {
                                 </NavLink> */}
                             </Stack>
                         </Grid>
-                        <Grid item size={{ xs: 1, md: 2 }} sx={{ mt: 1 }}>
+                        <Grid size={{ xs: 1, md: 2 }} sx={{ mt: 1 }}>
                             <Typography
                                 variant="body2"
                                 sx={{ color: "text.secondary", mb: 1 }}
@@ -176,7 +176,7 @@ export default function Footer() {
                         </Grid>
 
                         {/* company */}
-                        <Grid item size={{ xs: 1, md: 2 }} sx={{ mt: 1 }}>
+                        <Grid size={{ xs: 1, md: 2 }} sx={{ mt: 1 }}>
                             <Typography
                                 variant="body2"
                                 sx={{ color: "text.secondary", mb: 1 }}
